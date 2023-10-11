@@ -1,0 +1,117 @@
+
+//============= RUBIK FONT IMPORT =============
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+
+//========== SASS PARTIALS IMPORT ===========
+@import "responsive";
+
+
+//============= CSS RESET =====================
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+header{
+    background-image: url("../images/pattern-bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+
+    h1{
+        padding: 1em;
+        font-size: 24px;
+        text-align: center;
+        color: #fff;
+        font-weight: 500;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        border: none;
+        width: 85%;
+        margin: 0 auto;
+        .search-bar-container{
+            display: flex;
+            justify-content: center;
+            input{
+                padding: .7em;
+                padding-left: 1.5em;
+                font-size: 16px;
+                border-bottom-left-radius: 15px;
+                border-top-left-radius: 15px;
+                border: none;
+                width: 80%;
+                &:focus-within{
+                    border: none;
+                    outline: none;
+                }
+                &::placeholder{
+                    color: hsl(0, 0%, 59%);
+                    font-size: 12px;
+                }
+            }
+            button{
+                padding: 1.5em;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                background-color: #000;
+                transition: .3s all ease;
+                img{
+                    width: .7em;
+                    height: auto;
+                }
+                &:hover{
+                    background-color: #fff;
+                    cursor: pointer;
+                    img{
+                        filter: invert(100%);
+                    }
+                }
+            }
+        }
+    }
+    ul.ip-data{
+        text-align: center;
+        background-color: #fff;
+        width: 85%;
+        margin: 0 auto;
+        list-style: none;
+        padding: 1em;
+        top: 2em;
+        position: relative;
+        z-index: 99;
+        border-radius: 15px;
+        li{
+            margin-bottom: 1.2em;
+            .data{
+                .title{
+                    display: block;
+                    color: hsl(0, 0%, 59%);
+                    font-size: 10px;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                    padding-bottom: .75em;
+                }
+                .value{
+                    color: hsl(0, 0%, 17%);
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+#map{
+    height: 60vh;
+    z-index: 1;
+}

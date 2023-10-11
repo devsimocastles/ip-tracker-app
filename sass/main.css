@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+@media screen and (min-width: 875px) {
+  header {
+    background-image: url("../images/pattern-bg-desktop.png") !important;
+  }
+  header h1 {
+    font-size: 3em !important;
+  }
+  header .search-bar-container {
+    width: 70% !important;
+  }
+  header .search-bar-container input {
+    font-size: 1.5em !important;
+    font-weight: 500;
+  }
+  header .search-bar-container input::-moz-placeholder {
+    font-size: 0.8em !important;
+  }
+  header .search-bar-container input::placeholder {
+    font-size: 0.8em !important;
+  }
+  header ul.ip-data {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    height: 9em;
+    padding: 1.5em !important;
+  }
+  header ul.ip-data li, header ul.ip-data li:last-of-type {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    height: 100%;
+    margin: 0;
+  }
+  header ul.ip-data li:not(header ul.ip-data li:last-of-type) {
+    border-right: 1px hsla(0, 0%, 59%, 0.514) solid;
+    padding: 0 1em;
+    margin: 0;
+  }
+  header ul.ip-data li:last-of-type {
+    padding-left: 1em;
+  }
+  header ul.ip-data li .title {
+    text-align: left;
+  }
+  header ul.ip-data li .value {
+    font-size: 24px !important;
+    text-align: left;
+  }
+}
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+header {
+  background-image: url("../images/pattern-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+}
+header h1 {
+  padding: 1em;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+}
+header form {
+  display: flex;
+  justify-content: center;
+  border: none;
+  width: 85%;
+  margin: 0 auto;
+}
+header form .search-bar-container {
+  display: flex;
+  justify-content: center;
+}
+header form .search-bar-container input {
+  padding: 0.7em;
+  padding-left: 1.5em;
+  font-size: 16px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border: none;
+  width: 80%;
+}
+header form .search-bar-container input:focus-within {
+  border: none;
+  outline: none;
+}
+header form .search-bar-container input::-moz-placeholder {
+  color: hsl(0, 0%, 59%);
+  font-size: 12px;
+}
+header form .search-bar-container input::placeholder {
+  color: hsl(0, 0%, 59%);
+  font-size: 12px;
+}
+header form .search-bar-container button {
+  padding: 1.5em;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #000;
+  transition: 0.3s all ease;
+}
+header form .search-bar-container button img {
+  width: 0.7em;
+  height: auto;
+}
+header form .search-bar-container button:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+header form .search-bar-container button:hover img {
+  filter: invert(100%);
+}
+header ul.ip-data {
+  text-align: center;
+  background-color: #fff;
+  width: 85%;
+  margin: 0 auto;
+  list-style: none;
+  padding: 1em;
+  top: 2em;
+  position: relative;
+  z-index: 99;
+  border-radius: 15px;
+}
+header ul.ip-data li {
+  margin-bottom: 1.2em;
+}
+header ul.ip-data li .data .title {
+  display: block;
+  color: hsl(0, 0%, 59%);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-bottom: 0.75em;
+}
+header ul.ip-data li .data .value {
+  color: hsl(0, 0%, 17%);
+  font-size: 16px;
+}
+
+#map {
+  height: 60vh;
+  z-index: 1;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,48 @@
+@media screen and (min-width:875px){
+    header{
+        background-image: url("../images/pattern-bg-desktop.png") !important;
+        h1{
+            font-size: 3em !important;
+        }
+        .search-bar-container{
+            width: 70% !important;
+            input{
+                font-size: 1.5em !important;
+                font-weight: 500;
+                &::placeholder{
+                    font-size: .8em !important
+                }
+            }
+        }
+        ul.ip-data{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: start;
+            height: 9em;
+            padding: 1.5em !important;
+            li{
+                &, &:last-of-type{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: start;
+                    height: 100%;
+                    margin: 0;
+                }
+                &:not(&:last-of-type){
+                    border-right: 1px hsla(0, 0%, 59%, 0.514) solid;
+                    padding: 0 1em;
+                    margin: 0;
+                }
+                &:last-of-type{padding-left: 1em;}
+
+                .title{
+                    text-align: left;
+                }
+                .value{
+                    font-size: 24px !important;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
